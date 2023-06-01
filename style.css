@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu li {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+.sectionStruct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    text-align: center;
+}
+.homeSection {
+    height: 99vh ;
+    padding-top: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0,0.20), rgba(0, 0, 0,0.20)),url(./images/background1.jpg);
+    color: white;
+    background-size: 100% 100%;
+}
+
+.sectionStruct h1 {
+    font-size: 3.5rem;
+}
+.sectionStruct h2{
+    font-size:2.5rem ;
+}
+.sectionStruct h3 {
+    font-size: 1.5rem;
+}
+
+.sectionStruct p {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.musicSection {
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+}
+
+.demoImg {
+    width: 80%;
+    height: 40%;
+}
+
+.trialBtn {
+    background-color: rgb(243, 23, 67);
+    padding: 1.5rem;
+    color: white;
+    border: none;
+    transition: all 0.2s;
+    font-size: 1rem;
+
+}
+
+.trialBtn:hover {
+    background-color: rgb(196, 14, 51);
+}
+
+.videoSection {
+    background-color: white;
+    color: rgb(75, 72, 72);
+    padding-top: 4rem;
+}
+
+.readMoreBtn {
+    background-color: rgb(81, 81, 248);
+    padding: 1.5rem;
+    color: white;
+    border: none;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+
+.readMoreBtn:hover {
+    background-color: rgb(40, 40, 202);
+}
+
+.EntertainmentSection {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(./images/background2.jpg);
+    background-size: 100% 100%;
+    color: white;
+    margin-top: 2rem;
+    padding:0 3rem;
+    justify-content: center;
+}
+
+
+.giftCardSec {
+    display: flex;
+    background-color:rgb(240, 240, 240) ;
+}
+
+.giftCardSec img {
+    width: 35%;
+    height: 25%;
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+    color: rgb(75, 72, 72) ;
+}
+.cardinfo p{
+    color: rgb(102, 101, 101);
+}
+
+.footerContainer{
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    background-color: transparent;
+   padding: 3rem;
+    color: rgb(204, 198, 198);
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.footerLink ul{
+    margin-top: 2rem;
+}
+
+.footerLink h3 {
+    color: white;
+    cursor: pointer;
+}
+
+.footerLink ul li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 1rem 0;
+
+}
+.copyrightPara{
+    text-align: center;
+    color: white;
+ margin-bottom: 1rem;
+}
+
+@media screen and (max-width:992px) {
+    .giftCardSec{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 70%;
+    }
+    
+}
+@media screen  and (max-width:425px){
+    html{
+        font-size: 50%;
+    }
+
+    
+}
